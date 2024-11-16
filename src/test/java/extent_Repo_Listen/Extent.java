@@ -12,7 +12,7 @@ public class Extent extends ScreenShots {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		String dynamicDate = sdf.format(date);
-		String reportPath = "C:\\Users\\Lenovo\\eclipse-workspace\\Extent_Report\\target\\MyReport\\ereport_"+dynamicDate+".html";
+		String reportPath = "C:\\Users\\Lenovo\\eclipse-workspace_Sakthi\\Extent_Report\\target\\MyReport\\ereport_"+dynamicDate+".html";
 		ExtentReports extent = new ExtentReports();
 		ExtentSparkReporter report = new ExtentSparkReporter(reportPath);
 		extent.attachReporter(report);

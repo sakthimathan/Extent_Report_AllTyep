@@ -18,7 +18,7 @@ public class Extent extends ScreenShots {
 		String ReportTime = sdf.format(date);
 		
 		ExtentReports repo = new ExtentReports();
-		File file = new File("C:\\Users\\Lenovo\\eclipse-workspace\\Extent_Report\\Reports\\genarel_"+ReportTime+".html");
+		File file = new File("C:\\Users\\Lenovo\\eclipse-workspace_Sakthi\\Extent_Report\\target\\MyReport\\genarel_"+ReportTime+".html");
 		ExtentSparkReporter spark = new ExtentSparkReporter(file);
 		repo.attachReporter(spark);
 

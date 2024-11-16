@@ -21,7 +21,7 @@ public class ScreenShots extends base {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		String dynamicDate = sdf.format(date);
-		String desty = "C:\\Users\\Lenovo\\eclipse-workspace\\Extent_Report\\src\\test\\resources\\Attachments\\screen_"+dynamicDate+".png";
+		String desty = "C:\\Users\\Lenovo\\eclipse-workspace_Sakthi\\Extent_Report\\ScreenShots\\screen_"+dynamicDate+".png";
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(desty));

@@ -25,10 +25,9 @@ public class ScreenShots extends base {
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File screenshotAs = ts.getScreenshotAs(OutputType.FILE);
-		File des = new File("C:\\Users\\Lenovo\\eclipse-workspace\\Extent_Report\\"+ReportTime+FileName);
+		File des = new File("C:\\Users\\Lenovo\\eclipse-workspace_Sakthi\\Extent_Report\\ScreenShots"+ReportTime+"_"+FileName);
 		FileUtils.copyFile(screenshotAs, des);
 		return des.getAbsolutePath();
-
 	}
 
 

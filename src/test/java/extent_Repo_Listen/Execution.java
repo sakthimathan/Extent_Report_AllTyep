@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Execution extends base {
 
-	@Test(invocationCount = 4)
+	@Test()
 	public static void Runner() {
 
 		driver = new ChromeDriver();
